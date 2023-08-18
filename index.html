@@ -1,14 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geometry Genius</title>
+    <!-- Google Font  work sans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- daysiUI cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind CSS Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        // workSans: "'workSans', sans-serif"
+                        workSans: "'Work Sans', sans-serif"
+                    },
+                    // colors: {
+                    //     primary: '#F85559',
+                    //     title: '#121212',
+                    //     'dark-1': 'rgba(18, 18, 18, 0.60)',
+                    //     'dark-2': 'rgba(18, 18, 18, 0.80)'
+                    // }
+                },
+                container: {
+                    center: true,
+                    padding: {
+                        DEFAULT: '1.5rem',
+                        md: '2rem',
+                        lg: '4rem',
+                        xl: '5rem',
+                        '2xl': '6rem'
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
 <body>
-    <header></header>
+    <header class=" bg-gray-300 mx-5 rounded-md mt-5 ">
+        <nav class="flex justify-between items-center px-4 lg:px-10  py-4">
+            <div>
+                <h1 class=" text-2xl font-semibold md:text-3xl md:font-bold">Interactive</h1>
+                <h2 class="text-xl font-medium md:text-2xl md:font-semibold text-gray-600">Geometry Genius</h2>
+            </div>
+            <button class="btn btn-primary text-white">Blog</button>
+        </nav>
+    </header>
     <main>
 
     </main>
