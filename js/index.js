@@ -83,6 +83,54 @@ document
     }
     document.getElementById("parallelogram-area").style.display = "block";
     const area = base * height;
+    // console.log(area);
 
     showArea("parallelogram-area", area);
   });
+
+//   Rhombus part
+document.getElementById("btn-rhombus").addEventListener(`click`, function () {
+  const d1 = getInputValue("d1-fild");
+  const d2 = getInputValue("d2-fild");
+
+  document.getElementById("rhombus-area").style.display = "none";
+
+  if (d1 === 0 || d2 === 0) {
+    return;
+  }
+  document.getElementById("rhombus-area").style.display = "block";
+  const area = (d1 * d2) / 2;
+  showArea("rhombus-area", area);
+});
+//   Pentagon part
+document.getElementById("btn-pentagon").addEventListener(`click`, function () {
+  const length = getInputValue("pentagon-fild");
+  const pi = Math.PI;
+  const tan = Math.tan(pi / 5);
+
+  document.getElementById("pentagon-area").style.display = "none";
+
+  if (length === 0) {
+    return;
+  }
+  document.getElementById("pentagon-area").style.display = "block";
+  const area = (5 / 4) * Math.pow(length, 2) * (1 / tan);
+  const areaFixed = area.toFixed(2);
+  showArea("pentagon-area", areaFixed);
+});
+//   Ellipse part
+document.getElementById("btn-ellipse").addEventListener(`click`, function () {
+  const a = getInputValue("ellipse-a");
+  const b = getInputValue("ellipse-b");
+  const pi = Math.PI;
+
+  document.getElementById("ellipse-area").style.display = "none";
+
+  if (a === 0 || b === 0) {
+    return;
+  }
+  document.getElementById("ellipse-area").style.display = "block";
+  const area = pi * a * b;
+  const areaFixed = area.toFixed(3);
+  showArea("ellipse-area", areaFixed);
+});
