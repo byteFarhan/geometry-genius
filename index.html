@@ -47,24 +47,24 @@
 </head>
 
 <body>
-    <header class=" bg-gray-200 mx-5 rounded-md mt-5 ">
-        <nav class="flex justify-between items-center px-4 lg:px-10  py-4">
+    <header class="mx-5 mt-5 bg-gray-200 rounded-md ">
+        <nav class="flex items-center justify-between px-4 py-4 lg:px-10">
             <div>
-                <h1 class=" text-2xl font-semibold md:text-3xl md:font-bold">Interactive</h1>
-                <h2 class="text-xl font-medium md:text-2xl md:font-semibold text-gray-600">Geometry Genius</h2>
+                <h1 class="text-2xl font-semibold md:text-3xl md:font-bold">Interactive</h1>
+                <h2 class="text-xl font-medium text-gray-600 md:text-2xl md:font-semibold">Geometry Genius</h2>
             </div>
-            <button class="btn btn-primary text-white">Blog</button>
+            <button class="text-white btn btn-primary">Blog</button>
         </nav>
     </header>
-    <main class="flex flex-col lg:flex-row gap-5 mx-5 my-12">
-        <section class="  grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5  lg:space-y-4 lg:w-3/4">
+    <main class="flex flex-col gap-5 mx-5 my-12 lg:flex-row">
+        <section class="grid grid-cols-1 gap-5 lg:grid-cols-3 md:grid-cols-2 lg:space-y-4 lg:w-3/4">
             <!-- card item-1 -->
-            <div class="card  bg-base-100 shadow rounded-xl pt-4 text-center">
+            <div class="pt-4 text-center shadow card bg-base-100 rounded-xl">
                 <figure><img src="./images/triangle.png" alt="loading..." /></figure>
                 <div class="card-body">
                     <h2 class="text-2xl font-medium">Triangle</h2>
                     <p class="text-base font-medium">Area (A) = 0.5 x b x h</p>
-                    <div class="flex w-10/12 mx-auto items-center mb-8 my-4">
+                    <div class="flex items-center w-10/12 mx-auto my-4 mb-8">
                         <!-- input fild-1 -->
                         <input type="text" name="" id="base-fild" placeholder="base"
                             class="w-[85px] h-7 px-2 py-1 bg-gray-200  focus:outline-none rounded ">
@@ -75,19 +75,19 @@
                         <p class="lg:-ml-8">cm</p>
                     </div>
                     <!-- show total area part -->
-                    <span id="area1"></span>
+                    <span id="triangle-area"></span>
 
                     <button id="btn-triangle"
-                        class="transition-colors delay-75	 w-full py-3 rounded-xl text-base font-semibold bg-blue-500 hover:bg-blue-600 text-white">Calculate</button>
+                        class="w-full py-3 text-base font-semibold text-white transition-colors delay-75 bg-blue-500 rounded-xl hover:bg-blue-600">Calculate</button>
                 </div>
             </div>
             <!-- card item-2 -->
-            <div class="card  bg-base-100 shadow rounded-xl pt-4 text-center">
+            <div class="pt-4 text-center shadow card bg-base-100 rounded-xl">
                 <figure><img src="./images/rectangle.png" alt="loading..." /></figure>
                 <div class="card-body">
                     <h2 class="text-2xl font-medium">Rectangle</h2>
                     <p class="text-base font-medium">Area (A) = w x l </p>
-                    <div class="flex w-10/12 mx-auto items-center mb-8 my-4">
+                    <div class="flex items-center w-10/12 mx-auto my-4 mb-8">
                         <!-- input fild-1 -->
                         <input type="text" name="" id="width-fild" placeholder="width"
                             class="w-[85px] h-7 px-2 py-1 bg-gray-200  focus:outline-none rounded ">
@@ -101,16 +101,16 @@
                     <span id="rectangle-area"></span>
 
                     <button id="btn-rectangle"
-                        class="transition-colors delay-75 w-full py-3 rounded-xl text-base font-semibold bg-blue-500 hover:bg-blue-600 text-white">Calculate</button>
+                        class="w-full py-3 text-base font-semibold text-white transition-colors delay-75 bg-blue-500 rounded-xl hover:bg-blue-600">Calculate</button>
                 </div>
             </div>
             <!-- card item-3 -->
-            <div class="card  bg-base-100 shadow rounded-xl pt-4 text-center">
+            <div class="pt-4 text-center shadow card bg-base-100 rounded-xl">
                 <figure><img src="./images/parallelogram.png" alt="loading..." /></figure>
                 <div class="card-body">
                     <h2 class="text-2xl font-medium">Parallelogram</h2>
                     <p class="text-base font-medium">Area (A) = b x h</p>
-                    <div class="flex w-10/12 mx-auto items-center mb-8 my-4">
+                    <div class="flex items-center w-10/12 mx-auto my-4 mb-8">
                         <!-- input fild-1 -->
                         <input type="text" name="" id="pbase-fild" placeholder="base"
                             class="w-[85px] h-7 px-2 py-1 bg-gray-200  focus:outline-none rounded ">
@@ -124,18 +124,18 @@
                     <span id="parallelogram-area"></span>
 
                     <button id="btn-parallelogram"
-                        class="transition-colors delay-75	 w-full py-3 rounded-xl text-base font-semibold bg-blue-500 hover:bg-blue-600 text-white">Calculate</button>
+                        class="w-full py-3 text-base font-semibold text-white transition-colors delay-75 bg-blue-500 rounded-xl hover:bg-blue-600">Calculate</button>
                 </div>
             </div>
             <!-- card Rhombus item-4 -->
-            <div class="card  bg-base-100 shadow rounded-xl pt-4 text-center">
+            <div class="pt-4 text-center shadow card bg-base-100 rounded-xl">
                 <div class="text-center">
                     <figure><img src="./images/rhombus.png" alt="loading..." /></figure>
                 </div>
                 <div class="card-body">
                     <h2 class="text-2xl font-medium">Rhombus</h2>
                     <p class="text-base font-medium">Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
-                    <div class="flex w-10/12 mx-auto items-center mb-8 my-4">
+                    <div class="flex items-center w-10/12 mx-auto my-4 mb-8">
                         <!-- input fild-1 -->
                         <input type="text" name="" id="d1-fild" placeholder="d1"
                             class="w-[85px] h-7 px-2 py-1 bg-gray-200  focus:outline-none rounded ">
@@ -149,18 +149,18 @@
                     <span id="rhombus-area"></span>
 
                     <button id="btn-rhombus"
-                        class="transition-colors delay-75 w-full py-3 rounded-xl text-base font-semibold bg-blue-500 hover:bg-blue-600 text-white">Calculate</button>
+                        class="w-full py-3 text-base font-semibold text-white transition-colors delay-75 bg-blue-500 rounded-xl hover:bg-blue-600">Calculate</button>
                 </div>
             </div>
             <!-- card Pentagon item-5 -->
-            <div class="card  bg-base-100 shadow rounded-xl pt-4 text-center">
+            <div class="pt-4 text-center shadow card bg-base-100 rounded-xl">
                 <div class="text-center">
                     <figure><img src="./images/pentagon.png" alt="loading..." /></figure>
                 </div>
                 <div class="card-body">
                     <h2 class="text-2xl font-medium">Pentagon</h2>
                     <p class="text-base font-medium">Area (A) = 0.5 x p x b</p>
-                    <div class="w-10/12 mx-auto items-center mb-8 my-4">
+                    <div class="items-center w-10/12 mx-auto my-4 mb-8">
                         <!-- input fild-1 -->
                         <input type="text" name="" id="pentagon-fild" placeholder=" length"
                             class="w-[85px] h-7 px-2 py-1 bg-gray-200  focus:outline-none rounded ">
@@ -174,18 +174,18 @@
                     <span id="pentagon-area"></span>
 
                     <button id="btn-pentagon"
-                        class="transition-colors delay-75 w-full py-3 rounded-xl text-base font-semibold bg-blue-500 hover:bg-blue-600 text-white">Calculate</button>
+                        class="w-full py-3 text-base font-semibold text-white transition-colors delay-75 bg-blue-500 rounded-xl hover:bg-blue-600">Calculate</button>
                 </div>
             </div>
             <!-- card Ellipse item-6 -->
-            <div class="card  bg-base-100 shadow rounded-xl pt-4 text-center">
+            <div class="pt-4 text-center shadow card bg-base-100 rounded-xl">
                 <div class="text-center">
                     <figure><img src="./images/ellipse.png" alt="loading..." /></figure>
                 </div>
                 <div class="card-body">
                     <h2 class="text-2xl font-medium">Ellipse</h2>
                     <p class="text-base font-medium">Area (A) = πab</p>
-                    <div class="flex w-10/12 mx-auto items-center mb-8 my-4">
+                    <div class="flex items-center w-10/12 mx-auto my-4 mb-8">
                         <!-- input fild-1 -->
                         <input type="text" name="" id="ellipse-a" placeholder="a"
                             class="w-[85px] h-7 px-2 py-1 bg-gray-200  focus:outline-none rounded ">
@@ -199,20 +199,28 @@
                     <span id="ellipse-area"></span>
 
                     <button id="btn-ellipse"
-                        class="transition-colors delay-75 w-full py-3 rounded-xl text-base font-semibold bg-blue-500 hover:bg-blue-600 text-white">Calculate</button>
+                        class="w-full py-3 text-base font-semibold text-white transition-colors delay-75 bg-blue-500 rounded-xl hover:bg-blue-600">Calculate</button>
                 </div>
             </div>
 
         </section>
-        <section class="shadow flex-1 rounded-xl bg-gray-50 text-center p-3 pb-32 lg:pb-0">
+        <section id="area-entry"
+            class="justify-center flex-1 p-3 pb-32 space-y-5 text-center shadow rounded-xl bg-gray-50 lg:pb-0">
             <h1 class="text-3xl font-semibold underline">Area Calculation!</h1>
         </section>
     </main>
     <footer></footer>
     <!-- js file link -->
-    <script src="./js/index.js"></script>
+    <script src="./js/test.js"></script>
+    <!-- <script src="./js/final.js"></script> -->
+    <!-- <script src="./js/index.js"></script> -->
+
 </body>
 
 </html>
 
 <!-- <p class="text-xl font-semibold">Area: <span id="areaTotal"></span> cm<sup>2</sup></p> -->
+<!-- <dir class="flex items-center">
+    <p>cm<sup>2</sup></p>
+    <button class="btn btn-primary">convart</button>
+</dir> -->
